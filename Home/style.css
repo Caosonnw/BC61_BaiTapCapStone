@@ -425,6 +425,7 @@ li a i {
   padding-top: 1em;
 }
 .pricing .pricing_item .item_bottom ul.links {
+  padding-left: 0;
   min-height: 120px;
 }
 .pricing .pricing_item .item_bottom ul.links li {
