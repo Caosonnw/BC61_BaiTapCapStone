@@ -119,6 +119,14 @@ li a i {
   color: #35a22c;
   background-color: #ffff;
 }
+.header .theme-switch{
+  position: relative;
+  padding: 0 30px;
+}
+.header .theme-switch a i{
+  font-size: 25px;
+  color: #000;
+}
 @media screen and (max-width: 992px) {
   .header .navbar-nav .active::before {
     width: 0;
@@ -141,6 +149,11 @@ li a i {
     transform: translateX(1px);
     text-align: center;
     font-size: 19px;
+  }
+  .header .theme-switch{
+    position: absolute;
+    right: 100px;
+    top: 14px;
   }
 }
 /* carousel  */

@@ -71,11 +71,11 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="./gallery.html">Galllery</a>
+                  <a class="nav-link " href="./gallery.html">Galllery</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle active"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -100,11 +100,11 @@
                 </li>
               </ul>
             </div>
-            <!-- <div class="theme-switch">
-              <nav class="navigation">
-                <a href="#"><i class="fa-regular fa-moon"></i></a>
-              </nav>
-            </div> -->
+            <div class="theme-switch">
+              <a href="#" class="toggle-container">
+                <i id="toggle-icon" class="fa-regular fa-moon"></i>
+              </a>
+            </div>
           </div>
         </nav>
       </div>
@@ -536,5 +536,15 @@
     <!-- back to top js  -->
     <script src="../JS/back-to-top-master/assets/js/main.js"></script>
     <script src="../JS/back-to-top-master/assets/js/util.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleIcon = document.getElementById("toggle-icon");
+
+        toggleIcon.addEventListener("click", function () {
+          toggleIcon.classList.toggle("fa-moon");
+          toggleIcon.classList.toggle("fa-sun");
+        });
+      });
+    </script>
   </body>
 </html>

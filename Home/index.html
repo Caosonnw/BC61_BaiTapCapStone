@@ -78,7 +78,10 @@
             >
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./index.html"
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
                     >Home</a
                   >
                 </li>
@@ -86,10 +89,14 @@
                   <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./../Service/service.html">Services</a>
+                  <a class="nav-link" href="./../Service/service.html"
+                    >Services</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./../Gallery/gallery.html">Galllery</a>
+                  <a class="nav-link" href="./../Gallery/gallery.html"
+                    >Galllery</a
+                  >
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -102,7 +109,11 @@
                     Pages
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./../BlogPost/blog.html">Blog Posts</a></li>
+                    <li>
+                      <a class="dropdown-item" href="./../BlogPost/blog.html"
+                        >Blog Posts</a
+                      >
+                    </li>
                     <li><a class="dropdown-item" href="#">Landing Page</a></li>
                   </ul>
                 </li>
@@ -118,11 +129,11 @@
                 </li>
               </ul>
             </div>
-            <!-- <div class="theme-switch">
-              <nav class="navigation">
-                <a href="#"><i class="fa-regular fa-moon"></i></a>
-              </nav>
-            </div> -->
+            <div class="theme-switch">
+              <a href="#" class="toggle-container">
+                <i id="toggle-icon" class="fa-regular fa-moon"></i>
+              </a>
+            </div>
           </div>
         </nav>
       </div>
@@ -533,7 +544,8 @@
                 />
                 <a
                   href="./../media/VideoPoochCare.mp4"
-                  data-fancybox="gallery" data-caption="Poochcare"
+                  data-fancybox="gallery"
+                  data-caption="Poochcare"
                   class="position-absolute text-center play_video"
                   ><span><i class="fa-solid fa-play"></i></span
                 ></a>
@@ -941,5 +953,15 @@
     <!-- back to top js  -->
     <script src="../JS/back-to-top-master/assets/js/main.js"></script>
     <script src="../JS/back-to-top-master/assets/js/util.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleIcon = document.getElementById("toggle-icon");
+
+        toggleIcon.addEventListener("click", function () {
+          toggleIcon.classList.toggle("fa-moon");
+          toggleIcon.classList.toggle("fa-sun");
+        });
+      });
+    </script>
   </body>
 </html>
